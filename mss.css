@@ -1,0 +1,41 @@
+body {
+  background: rgb(204,204,204); 
+  font-family: "Times New Roman", Georgia, Serif;
+}
+
+p {
+  line-height: 2;
+  font-size: 12pt;
+  
+}
+
+.body {
+text-indent: .5in;
+}
+
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+page[size="A4"] {  
+  width: 21cm;
+  height: 29.7cm; 
+}
+
+.content {
+
+  padding: 1in;
+  padding-top: .8in;
+
+}
+
+
+@media print {
+  body, a4 {
+    margin: 0;
+    box-shadow: 0;
+  }
+}
